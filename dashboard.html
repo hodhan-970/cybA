@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Welcome Admin</h2>
+
+  <div class="upload-section">
+    <h3>Upload Article</h3>
+    <input type="text" id="articleTitle" placeholder="Title">
+    <textarea id="articleContent" placeholder="Content"></textarea>
+    <button onclick="uploadArticle()">Upload Article</button>
+  </div>
+
+  <div class="upload-section">
+    <h3>Articles</h3>
+    <ul id="articles-list"></ul>
+  </div>
+
+  <div class="upload-section">
+    <h3>Upload Infographic (via Image URL)</h3>
+    <input type="text" id="infographicUrl" placeholder="Image URL">
+    <input type="text" id="infographicCaption" placeholder="Caption">
+    <button onclick="uploadInfographic()">Upload Infographic</button>
+  </div>
+
+  <div class="upload-section">
+    <h3>Infographics</h3>
+    <ul id="infographics-list"></ul>
+  </div>
+  
+
+  <div class="upload-section">
+    <h3>Upload Video</h3>
+    <input type="text" id="videoTitle" placeholder="Title">
+    <input type="text" id="videoUrl" placeholder="YouTube embed link">
+    <button onclick="uploadVideo()">Upload Video</button>
+  </div>
+
+  <div class="upload-section">
+    <h3>Videos</h3>
+    <ul id="videos-list"></ul>
+  </div>
+
+  <div class="upload-section">
+    <h3>Upload Quiz Question</h3>
+    <input type="text" id="quizQuestion" placeholder="Question">
+    <input type="text" id="option1" placeholder="Option 1">
+    <input type="text" id="option2" placeholder="Option 2">
+    <input type="text" id="option3" placeholder="Option 3">
+  
+    <label for="answerSelect">Correct Answer:</label>
+    <select id="answerSelect">
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  
+    <button onclick="uploadQuiz()">Upload Question</button>
+  </div>
+
+  <div class="upload-section">
+    <h3>Quizzes</h3>
+    <ul id="quizzes-list"></ul>
+  </div>
+
+  <div class="upload-section">
+    <h3>Test Participants</h3>
+    <p>Total: <span id="user-count">0</span></p>
+    <ul id="user-list"></ul>
+  </div>
+  
+  
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
